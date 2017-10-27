@@ -3,8 +3,10 @@ Proyecto de Ingeniería de Software
 
 Integrantes:
 
-Amelia Brito
-Victor García
-Franco Marino
+-Amelia Brito
+
+-Victor García
+
+-Franco Marino
 
 
