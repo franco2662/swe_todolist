@@ -1,0 +1,49 @@
+Requerimientos funcionales de la aplicación:
+-Crear nota (título, detalles, prioridad, fecha)
+-Editar nota
+-Eliminar nota
+-Marcar nota finalizada
+-Mostrar notas
+
+> Crear nota:
+ - Historias de usuario: 
+ *Como usuario, quiero botón para crear una nueva nota.
+ - Criterios de aceptación:
+ + Dado un botón, cuando el usuario haga click en este, se le desplegará un panel para ingresar los datos de la nota.
+ + Dado un panel, cuando el usuario ingrese los datos de la nota, se procederá a llenar los campos de esta.
+ + Dado un botón "listo", cuando el usuario lo presione, se guardará y mostrará la nota en la pantalla principal.
+
+> Editar nota:
+ - Historias de usuario: 
+ * Como usuario, quiero una opción para editar notas.
+ - Criterios de aceptación:
+ + Dado un botón de opciones, cuando el usuario de click, se desplegará un submenú con la opción de editar la nota.
+ + Dada una opción editar nota, cuando el usuario de click, se desplegará un panel para escribir la nota actualizada. 
+ + Dado un panel para editar la nota, cuando el usuario modifique los datos, se procederá a guardar los cambios.
+
+> Eliminar nota:
+ - Historias de usuario: 
+ *Como usuario, quiero una opción para eliminar notas. 
+ - Criterios de aceptación:
+ + Dado un botón de opciones, cuando el usuario de click, se desplegará un submenú con la opción de eliminar la nota.
+ + Dado un botón de eliminar, cuando el usuario de click, se eliminará la nota automaticamente.
+
+> Marcar nota finalizada:
+ - Historias de usuario: 
+ *Como usuario, quiero un botón que coloque un check para marcar una nota como finalizada.
+ - Criterios de aceptación:
+ + Dado un botón de check, cuando el usuario de click la nota, se tachará indicando que fue realizada.
+
+> Mostrar notas:
+ - Historias de usuario: 
+ *Como usuario, quiero un botón que me permita agrandar la nota para visualizar todos sus detalles.
+ - Criterios de aceptación:
+ + Dado un panel donde se visualice la nota, cuando el usuario de click en él, se agrandará la nota para su mejor visualización.
+
+
+Requerimientos no funcionales de la aplicación:
+
+-Se requiere una base de datos para poder guardar las notas creadas y sus detalles.
+-Se requiere de un servidor (backend) para poder acceder a la base de datos.
+-Se requiere de una interfaz (frontend) para que el usuario pueda interactuar con la aplicación.
+-Se requieren por lo menos las pruebas unitarias y de integración para comprobar que el software funciona adecuadamente.
