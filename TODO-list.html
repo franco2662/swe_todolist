@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="es-VE">
+   <head>
+
+      <meta charset= "UTF-8"/>	
+      <title>TODO-List</title>
+   </head>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Perfil</a>
+  <a href="#">Configuración</a>
+  <a href="#">Herramientas</a>
+  <a href="#">Salir</a>
+</div>
+
+<span style=" font-size:30px;cursor:pointer" onclick="MenúNav()">&#9776; menú</span>
+
+<script>
+function MenúNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</body>
+
+    <style>
+
+
+      #add-note { 
+       position : fixed;
+       right: 560px;
+       bottom: 20px;
+       width: 100px;
+       height: 100px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+       border-radius: 50%;
+       background:#E52A01;
+      }
+
+     #note-one {
+	position: fixed;
+	right: 750px;
+	bottom: 300px;
+	width: 259px;
+	height: 300px;
+	border: 2px solid #000000;
+	background-color: GOLDENROD;
+	margin:20px 0;
+	background:C82559; 
+	border-radius:50% / 10%; 
+	color:C82559; 
+	text-align:center; 
+	text-indent:.1em; 
+      }	
+     
+     #note-two {
+	position: fixed;
+	right: 450px;
+	bottom: 250px;
+	width: 259px;
+	height: 300px;
+	border: 2px solid #000000;
+	background-color: DARKGOLDENROD;
+	margin:20px 0;
+	background:C82559; 
+	border-radius:50% / 10%; 
+	color:C82559; 
+	text-align:center; 
+	text-indent:.1em; 
+      }
+
+     #note-three {
+	position: fixed;
+	right: 150px;
+	bottom: 300px;
+	width: 259px;
+	height: 300px;
+	border: 2px solid #000000;
+	background-color: PERU;
+	margin:20px 0;
+	background:30C2DA; 
+	border-radius:50% / 10%; 
+	color:30C2DA; 
+	text-align:center; 
+	text-indent:.1em;
+      }	
+
+   button {
+ 	border: none;
+        right: 120px;
+        bottom: 400px;
+	background: #3a7999;
+ 	color: #f2f2f2;
+ 	padding: 20px;
+ 	font-size: 20px;
+ 	border-radius: 60px;
+ 	position: fixed;
+ 	box-sizing: border-box;
+ 	transition: all 500ms ease;
+    }
+   button:before {
+   	content:'';
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+ 	width: 0px;
+ 	height: 100px;
+ 	background: rgba(255,255,255,0.3);
+ 	border-radius: 5px;
+ 	transition: all 2s ease;
+    }
+	button:hover:before {
+ 	width: 100%;
+   }
+
+
+   </style>
+
+<div class="grid-block" style="background-image: url('https://previews.123rf.com/images/michaeldb/michaeldb1407/michaeldb140700014/30181783-post-daily-to-do-list-schedule-on-memo-notes-on-time-clock-Stock-Vector.jpg'); width: 100%; height: 100vh; ">
+
+   <body>
+
+     <div id ="TODO-List">
+         <button id="add-note">Crear Nota</button>
+         <section class="note priority-1" data-group="Optimización">
+	   </div> 
+	<div>
+	 <table id="note-one">
+	   <tr><th><input type="text" value="Título" name="titulo"><textarea rows="10" cols="30">Detalles</textarea><input type="date"><input type="time">
+	   <select name="Opciones"><option value="1">Opciones</option><option value="2">Eliminar</option><option value="3">Modificar</option><option value="4">Completada</option></th></tr>
+	 </table>
+	</div>
+	<div>
+	 <table id="note-two">
+           <tr><th><input type="text" value="Título" name="titulo"><textarea rows="10" cols="30">Detalles</textarea><input type="date"><input type="time">
+	   <select name="Opciones"><option value="1">Opciones</option><option value="2">Eliminar</option><option value="3">Modificar</option><option value="4">Completada</option></th></tr>
+	 </table>
+	</div>
+
+
+	<div>
+	 <table id="note-three">
+	   <tr><th><input type="text" value="Título" name="titulo"><textarea rows="10" cols="30">Detalles</textarea><input type="date"><input type="time">
+	   <select name="Opciones"><option value="1">Opciones</option><option value="2">Eliminar</option><option value="3">Modificar</option><option value="4">Completada</option></th></tr>
+	 </table>
+	</div>
+	
+      </section>
+     </div>
+   </body>
+   <body style="background-color:white">
+</body>
+
+</html>
