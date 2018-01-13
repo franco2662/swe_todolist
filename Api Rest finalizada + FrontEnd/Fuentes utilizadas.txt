@@ -1,0 +1,8 @@
+https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular
+
+https://carlosazaustre.es/tutorial-ejemplo-de-aplicacion-web-con-angular-js-y-api-rest-con-node/
+
+https://www.youtube.com/watch?v=JwZKcm3zWcA&list=PLUdlARNXMVkk7E88zOrphPyGdS50Tadlr
+
+https://github.com/epic-math/NodeJS-MEAN
+
